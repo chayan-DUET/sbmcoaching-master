@@ -1,0 +1,20 @@
+@CHARSET "ISO-8859-1";
+body {
+	background-color:#4a7574;
+
+}
+.formdiv{
+	color:#92878b;
+	height:200px;
+	width:300px;
+	background-color:#808000;
+	margin-left:470px;
+	margin-top:200px;
+}
+.pp{
+	color: red;
+}
+.pph{
+	
+	color:#cd4b96;
+}
