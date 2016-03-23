@@ -82,6 +82,7 @@
 <div class="container-fluid main" id="about">
 	<div class="row">
 		<div class="col-md-12 col-sm-12 col-xs-12 some-notes ">
+		<h3 class="text-center features-text">About</h3>
 			<div class="title fpic">
                 <img src="images/imag9.jpg" class="img-rounded" alt="Cinque Terre" width="250" height="200">
             </div>
@@ -116,7 +117,7 @@ Rambo weighs about 125 pounds the same as a human. He has bizarre human qualitie
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="text-center features-text">Teacher information</h2>
+				<h3 class="text-center features-text">Teacher information</h3>
 				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
 					<div class="col-md-2 col-sm-2 col-xs-12">
 						<div class="iconing">
