@@ -28,19 +28,21 @@
         </div>
         </div>
 		<div class="row">
-		<div class="col-lg-8">
+		<div class="col-md-6 col-sm-4 col-xs-2">
 			
-				<p class="pp">chayan_cse10@yahoo.com</p>
-				<p class="pp">Hi say your mind........</p>
-					<form action="">
+			<div>	<p class="pp">chayan_cse10@yahoo.com</p>
+				<p class="pp">Hi say your mind........</p></div>
+				<div>	<form action="">
 					<input type="text" id=" " name="item_meta[65]" value="" placeholder="Name">
 					<input type="email" id=" " name="item_meta[66]" value="" placeholder="Email">
 					<textarea cols="55" rows="5" name="textarea" id="textarea">More text</textarea>
-				</form>
 				<input type="button" size="100" value="Submit"/>
+				</form>
+				</div>
+				
 				
 			</div>
-			<div class="col-lg-4"></div>
+		
 			
 			 </div>
 			 <div class="row">
