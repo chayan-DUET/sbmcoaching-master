@@ -1,76 +1,53 @@
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(26.802100, 75.822739),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 
-
-    <script>
-	$(document).ready(function () {
-		$(document).on("scroll", onScroll);
- 
-		$('a[href^="#"]').on('click', function (e) {
-			e.preventDefault();
-			$(document).off("scroll");
- 
-			$('a').each(function () {
-				$(this).removeClass('active');
-			})
-			$(this).addClass('active');
- 
-			var target = this.hash;
-			$target = $(target);
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 500, 'swing', function () {
-				window.location.hash = target;
-				$(document).on("scroll", onScroll);
-			});
-		});
-	});
- 
-	function onScroll(event){
-		var scrollPosition = $(document).scrollTop();
-		$('nav a').each(function () {
-			var currentLink = $(this);
-			var refElement = $(currentLink.attr("href"));
-			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-				$('nav ul li a').removeClass("active");
-				currentLink.addClass("active");
-			}
-			else{
-				currentLink.removeClass("active");
-			}
-		});
-	}
-</script>
-
-
-<script type="text/javascript">
-    jQuery(function ($) {
-      // custom formatting example
-      $('.timer').data('countToOptions', {
-        formatter: function (value, options) {
-          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-        }
-      });
- 
-      // start all the timers
-      $('#starts').waypoint(function() {
-    $('.timer').each(count);
-});
- 
-      function count(options) {
-        var $this = $(this);
-        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-        $this.countTo(options);
-      }
+jQuery(document).ready(function() {
+	
+    /*
+        Fullscreen background
+    */
+    $.backstretch("assets/img/backgrounds/1.jpg");
+    
+    $('#top-navbar-1').on('shown.bs.collapse', function(){
+    	$.backstretch("resize");
     });
-  </script>
+    $('#top-navbar-1').on('hidden.bs.collapse', function(){
+    	$.backstretch("resize");
+    });
+    
+    /*
+	    Contact form
+	*/
+	$('.contact-form form input[type="text"], .contact-form form textarea').on('focus', function() {
+		$('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
+	});
+	$('.contact-form form').submit(function(e) {
+		e.preventDefault();
+	    $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
+	    var postdata = $('.contact-form form').serialize();
+	    $.ajax({
+	        type: 'POST',
+	        url: 'assets/contact.php',
+	        data: postdata,
+	        dataType: 'json',
+	        success: function(json) {
+	            if(json.emailMessage != '') {
+	                $('.contact-form form .contact-email').addClass('input-error');
+	            }
+	            if(json.subjectMessage != '') {
+	                $('.contact-form form .contact-subject').addClass('input-error');
+	            }
+	            if(json.messageMessage != '') {
+	                $('.contact-form form textarea').addClass('input-error');
+	            }
+	            if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
+	                $('.contact-form form').fadeOut('fast', function() {
+	                    $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
+	                    // reload background
+	    				$.backstretch("resize");
+	                });
+	            }
+	        }
+	    });
+	});
+    
+    
+});
