@@ -12,10 +12,10 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/form-elements.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../cssemail/form-elements.css">
+        <link rel="stylesheet" href="../cssemail/style.css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +25,7 @@
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="shortcut icon" href="../ico/favicon.png">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
@@ -47,6 +47,7 @@
 		<!--//webfonts-->
     </head>
 
+    
     <body>
 
 		<!-- Top menu -->
@@ -73,8 +74,8 @@
 								here, or some icons: 
 							</span> 
 							<span class="li-social">
-								<a href="#"><i class="fa fa-facebook"></i></a> 
-								<a href="#"><i class="fa fa-twitter"></i></a> 
+								<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> 
+								<a href="https://twitter.com/search?q=%23login"><i class="fa fa-twitter"></i></a> 
 								<a href="#"><i class="fa fa-envelope"></i></a> 
 								<a href="#"><i class="fa fa-skype"></i></a>
 							</span>
@@ -137,11 +138,11 @@
 
 
         <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/retina-1.1.0.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+        <script src="../js-email/jquery-1.11.1.min.js"></script>
+        <script src="../jsemailboot/bootstrap.min.js"></script>
+        <script src="../js-email/jquery.backstretch.min.js"></script>
+        <script src="../js-email/retina-1.1.0.min.js"></script>
+        <script src="../js-email/scripts.js"></script>
         
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
