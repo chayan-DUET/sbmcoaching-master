@@ -28,7 +28,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="container">
 <div class="row">
 <div col-lg-12 col-md-12 col-sm-12>
-<div><a href="./email.jsp">HOME</a>
+<div><a href="/sbmcoaching">HOME</a>
 
 </div>
 
