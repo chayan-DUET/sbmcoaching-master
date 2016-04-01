@@ -53,7 +53,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 					<div class="p-container">
 								<label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>Remember Me</label>
-								<input type="submit" onclick="myFunction()" value="SIGN IN" >
+								<!-- <input type="submit" onclick="myFunction()" value="SIGN IN" > -->
+								<a href="../Admin-DashB/index.jsp"><input type="button" value="Sign-in" name="cancel"/></a>
+							
 							<div class="clear"> </div>
 					</div>
 				</form>

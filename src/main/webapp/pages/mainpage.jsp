@@ -93,7 +93,7 @@
 		<div class="col-md-12 backgred">
 			<div class="col-md-4 col-md-offset-4  col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
 				<div class="text-box">
-                	<h2>Mahamud</h2>
+                	<h2>Alok</h2>
                     <h2>Chayan</h2>
                     <h2> Tapas</h2>
                     
@@ -331,7 +331,7 @@ Rambo weighs about 125 pounds the same as a human. He has bizarre human qualitie
 					<div id="map-canvas"></div>
 					<div class="address">
 						<h3>Address</h3>
-						<p><i class="glyphicon glyphicon-map-marker"></i> House Name, City Name, India </p>
+						<p><i class="glyphicon glyphicon-map-marker"></i> House Name, City Name, Bangladesh </p>
 						<p><i class="glyphicon glyphicon-earphone"></i>(111) 123-4567 | (111) 123-7654 (FAX)</p>
 						<p><i class="glyphicon glyphicon-envelope"></i>Info@example.com</p>
 					</div>
